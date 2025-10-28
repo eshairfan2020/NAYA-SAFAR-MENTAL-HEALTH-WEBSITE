@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naya Safar — Mental Health & Wellbeing</title>
+  <meta name="description" content="Naya Safar - Mental health and wellbeing platform." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <div class="logo">
+          <span class="leaf"></span>
+          <span class="leaf right"></span>
+        </div>
+        <div>
+          <strong>Naya Safar</strong><br>
+          <span class="slogan-small">Your New Journey Towards Healing</span>
+        </div>
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav>
+        <ul class="nav-list" id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <h1>Care for your mind, support for your journey.</h1>
+      <p class="hero-slogan">✨ Your New Journey Towards Healing ✨</p>
+      <p>Confidential, compassionate support. Online & in-person care for anxiety, stress, and more.</p>
+      <a href="#contact" class="btn">Book a free consult</a>
+      <a href="#resources" class="btn secondary">Browse resources</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+ <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Counseling</h3>
+            <p>One-on-one sessions to help manage stress, anxiety, and depression with professional guidance.</p>
+            <button class="btn" onclick="openBookingModel('Counseling')">View Therapist</button>
+          </div>
+          <div class="card">
+            <h3>Therapy</h3>
+            <p>Evidence-based therapy approaches to help you process emotions and build resilience.</p>
+            <button class="btn"onclick="openBookingModal ('Therapy')">View Therapist</button>
+          </div>
+          <div class="card">
+            <h3>Workshops</h3>
+            <p>Interactive group sessions on mindfulness, self-care, and emotional wellbeing.</p>
+            <button class="btn"onclick="openBookingModal ('Workshops')">View Therapist</button>
+          </div>
+          <div class="card">
+            <h3>Anxiety</h3>
+            <p>Understand and manage the symptoms of anxiety through personalized strategies and support.</p>
+            <button class="btn"onclick="openBookingModal ('Anxiety')">View Therapist</button>
+          </div>
+          <div class="card">
+            <h3>Hyperactivity</h3>
+            <p>Guidance and resources to help individuals manage hyperactive behavior effectively.</p>
+            <button class="btn"onclick="openBookingModal ('Hyperactivity')">View Therapist</button>
+          </div>
+          <div class="card">
+            <h3>Addiction</h3>
+            <p>Support for overcoming addiction through therapy, education, and coping techniques.</p>
+            <button class="btn"onclick="openBookingModal ('Addiction')">View Therapist</button>
+          </div>
+          <div class="card">
+            <h3>Depression</h3>
+            <p>Compassionate care to help individuals navigate and recover from depression.</p>
+            <button class="btn"onclick="openBookingModal ('Depression')">View Therapist</button>
+          </div>
+          <div class="card">
+            <h3>Mental Illness</h3>
+            <p>Comprehensive mental health support to manage various mental health conditions.</p>
+            <button class="btn"onclick="openBookingModal ('Mental-Illness')">View Therapist</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Resources -->
+  <section id="resources" class="section alt">
+    <div cla ss="container">
+      <h2 class="section-title">Resources</h2>
+      <div class="grid">
+        <div class="card"><h3>Self-Help Guides</h3><p>Free downloadable resources for daily mental health.</p></div>
+        <div class="card"><h3>Blog</h3><p>Articles about wellbeing, growth, and mental strength.</p></div>
+        <div class="card"><h3>Hotlines</h3><p>Access urgent help through local/international helplines.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq">
+        <details><summary>Is therapy confidential?</summary><p>Yes, everything you share is private unless there's a risk of harm.</p></details>
+        <details><summary>Do you offer online sessions?</summary><p>Yes, we offer both in-person and virtual counseling.</p></details>
+        <details><summary>How do I book a session?</summary><p>Use the contact form below — we’ll respond within 24 hours.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#home">
+          <div class="logo">
+            <span class="leaf"></span>
+            <span class="leaf right"></span>
+          </div>
+          <div><strong>Naya Safar</strong><br><span class="small">Care for your mind.</span></div>
+        </a>
+        <p class="small">This site offers mental health support and resources. It does not replace medical advice.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+        <p class="small">© <span id="year">2025</span> Naya Safar</p>
+      </div>
+    </div>
+  </footer>
+<!-- Booking Modal -->
+<div id="bookingModal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.6); z-index:1000;">
+  <div style="background:#fff; max-width:500px; margin:5% auto; padding:2rem; border-radius:10px; position:relative;">
+    <h2 id="bookingServiceTitle">Book a Session</h2>
+    
+    <label>Budget:</label>
+    <select id="bookingBudget">
+      <option value="1000">PKR 1000</option>
+      <option value="1500">PKR 1500</option>
+      <option value="2000">PKR 2000</option>
+    </select><br><br>
+
+    <label>Choose Day:</label>
+    <select id="bookingDay">
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+    </select><br><br>
+
+    <label>Choose Time:</label>
+    <select id="bookingTime">
+      <option value="10:00 AM">10:00 AM</option>
+      <option value="2:00 PM">2:00 PM</option>
+      <option value="5:00 PM">5:00 PM</option>
+    </select><br><br>
+
+    <button class="btn" onclick="confirmBooking()">Confirm Booking</button>
+    <button class="btn secondary" onclick="closeBookingModal()">Cancel</button>
+  </div>
+</div>
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/923001234567" target="_blank" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+">
+  💬
+</a>
+</body>
+</html>
